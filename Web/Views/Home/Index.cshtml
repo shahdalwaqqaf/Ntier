@@ -26,6 +26,10 @@
                 }
 
                 <!-- TODO: إضافة زر حذف المهمة -->
+                <form action="/TaskService/DeleteTask" method="post">
+                <input type="hidden" name="taskId" value="@task.Id">
+                <button type="submit">حذف</button>
+                </form>
             </li>
         }
     </ul>
